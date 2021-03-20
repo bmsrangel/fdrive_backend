@@ -1,6 +1,6 @@
 # FDrive Backend
 
-## Description
+## Descrição
 
 Este repositório contém o código fonte da parte do backend de uma aplicação de armazenamento de arquivos em nuvem, apelidada de "FDrive". As tecnologias utilizadas nesta aplicação incluem:
 
