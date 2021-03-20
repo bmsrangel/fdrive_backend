@@ -26,6 +26,9 @@ export class FilesService {
     newFileEntity.userId = userId;
 
     try {
+      if (!fs.existsSync(path.join('public'))) {
+        fs.mkdirSync(path.join('public'));
+      }
       fs.writeFileSync(filePath, file.buffer);
       return this.filesRepository.save(newFileEntity);
     } catch (error) {
